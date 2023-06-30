@@ -231,11 +231,11 @@ supervision.\\[2.5cm]
     %
     \begin{minipage}{.55\textwidth}
       \textbf{Station:} \pstation\\
-      \textbf{Duration:} 02\textsuperscript{nd} August - 21\textsuperscript{st} December 2021
+      \textbf{Duration:} 30\textsuperscript{th} May - 22\textsuperscript{nd} July 2023
     \end{minipage}%
     \begin{minipage}{0.45\textwidth}
       \textbf{Centre:} \pcentre\\
-      \textbf{Date of Submission:} 23\textsuperscript{rd} August 2021
+      \textbf{Date of Submission:} 24\textsuperscript{th} June 2023
     \end{minipage}
     %
     %
