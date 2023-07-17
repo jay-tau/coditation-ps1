@@ -1,0 +1,38 @@
+% Chapter Template
+
+\chapter{My Contributions on Project Boxxy} % Main chapter title
+
+\label{Chapter5} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 5. \emph{My Work on Project Boxxy}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+\section{Build Systems}
+
+I spend the initial week exploring building systems. A build system plays a crucial role in the development workflow of software projects.
+It automates compiling source code, linking dependencies, and generating executable or deployable artefacts.
+They also help in managing the project dependencies and their versions.
+
+There are two significant kinds of build systems, artefact-based and task-based.
+Most early build systems like \texttt{make} and \texttt{ant} are task-based. They execute a series of tasks step-by-step to generate the final artefact. This means that for every small change, all the steps are performed again.
+The other type of build system is artifact-based. They execute only the tasks that are required to generate the final artefact. This is done by maintaining a dependency graph of the tasks and their inputs and outputs.
+This means that for every small change, only the tasks affected are executed, saving time.
+
+I explored Bazel, a popular artefact-based build system developed by Google. I also studied some optimisations it has, like remote caching and remote execution. Remote caching allows users to utilise a shared cache of build artefacts, which can be used to speed up builds. Remote execution will enable users to execute build tasks on remote machines, which can be used to speed up builds and build for different architectures.
+
+\section{Dependency Management for C++ Projects}
+
+The following week, I spent time understanding how C++ projects manage their dependencies, and integrate them with a build system for OS-agnostic builds.
+I looked into \texttt{vcpkg} which is a package manager used to manage C/C++ libraries. It is often used in tandem with CMAKE, which is a popular build system for C++ projects.
+
+\section{WebGPU}
+
+We then pivoted roles, and I started working on the WebGPU implementation. I began by reading the WebGPU specification and understanding the API and its features. Since I did not have prior experience with graphics programming, I spent some time learning the basics of graphics programming and the graphics pipeline. This was an exciting experience, and I learned much about graphics programming. I learnt about vertices, rasterisation, ray tracing and shaders. I also learnt about the various file formats used in graphics programming, like GLSL, SPIR-V, and HLSL.
+
+WebGPU currently has two significant distributions: Dawn from Google, written in C++ and GPU-native from Mozilla, written in Rust. Dawn has better quality-of-life features, like better error messages and better documentation. However, it required to be built from the source, which was a challenging process. Conversely, GPU-native is available as a pre-built binary and is easier to set up. Wgpu-native would be preferred for minor projects due to its simple setup process.
+
+\section{Point Clouds}
+
+The last stage of the project deals with rendering point clouds. We were provided with raw pint-cloud data from a 3D scanner in a proprietary format. This was then to be investigated and rendered. Following this, we could convert the data to a standard format of coordinate colours and render it using \texttt{open3d} in Python.
+We then exported the point cloud as a PCD file, an industry-standard format for point-cloud data. This was a complex feat, as the data from the 3D scanner was not in a standard format and required some processing before it could be rendered. I then understood the PCD format specification and how its header related to the succeeding data.
+
+We are now exploring Three.js for loading and rendering the PCD file in the browser. We are also exploring the possibility of rendering the point cloud in the browser using WebGPU.

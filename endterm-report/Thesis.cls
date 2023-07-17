@@ -211,13 +211,13 @@ supervision.\\[2.5cm]
 %-------------------------------------------------------------------------------
 \newcommand\AbstractSheet{
 \setstretch{1}
-\btypeout{Abstract Sheet}
-\addtotoc{Abstract Sheet}
+\btypeout{Report Details}
+\addtotoc{Report Details}
 \addtocontents{toc}{\vspace{0.25em}} % Add gap in the Contents, for aesthetics
 \thispagestyle{plain}
 % \null\vfil
 \begin{center}
-  {\Large\bf Abstract Sheet
+  {\Large\bf Report Details
     \\
     BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE,
     \\
