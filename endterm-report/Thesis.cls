@@ -32,8 +32,8 @@
 %-------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
 \ProvidesClass{Thesis}
-              [2007/22/02 v1.0
-   LaTeX document class]
+[2007/22/02 v1.0
+  LaTeX document class]
 \def\baseclass{book}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{\baseclass}}
 \def\@checkoptions#1#2{
@@ -58,8 +58,8 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
 
 \def\today{\ifcase\month\or
-  January\or February\or March\or April\or May\or June\or
-  July\or August\or September\or October\or November\or December\fi
+    January\or February\or March\or April\or May\or June\or
+    July\or August\or September\or October\or November\or December\fi
   \space \number\year}
 
 \usepackage[normalem]{ulem}
@@ -79,13 +79,13 @@
 % \usepackage[paper=a4paper,top=0.6in,bottom=0.8in,right=1in,left=1in]{geometry}
 \usepackage{vmargin}
 \setmarginsrb  { 1.0in}  % left margin
-               { 0.6in}  % top margin
-               { 1.0in}  % right margin
-               { 0.8in}  % bottom margin
-               {  20pt}  % head height
-               {0.25in}  % head sep
-               {   9pt}  % foot height
-               { 0.3in}  % foot sep
+{ 0.6in}  % top margin
+{ 1.0in}  % right margin
+{ 0.8in}  % bottom margin
+{  20pt}  % head height
+{0.25in}  % head sep
+{   9pt}  % foot height
+{ 0.3in}  % foot sep
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
@@ -94,29 +94,29 @@
 % Use the \Declaration command to print the Declaration of Authorship page
 %-------------------------------------------------------------------------------
 \newcommand\Declaration{
-    \btypeout{Declaration of Authorship}
-    \addtotoc{Declaration of Authorship}
-    \addtocontents{toc}{\vspace{1em}} % Add gap in the Contents, for aesthetics
-    \thispagestyle{plain}
-    \null\vfil
-    \begin{center}{\huge\bf Declaration of Authorship\par}\end{center}
-    {\normalsize
+\btypeout{Declaration of Authorship}
+\addtotoc{Declaration of Authorship}
+\addtocontents{toc}{\vspace{1em}} % Add gap in the Contents, for aesthetics
+\thispagestyle{plain}
+\null\vfil
+\begin{center}{\huge\bf Declaration of Authorship\par}\end{center}
+{\normalsize
 I, \authornames, declare that this \doctype{} titled, `\ttitle' and the work
 presented in it are my own. I confirm that:
 
 \begin{itemize}
-    \item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in
+  \item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in
         candidature for a research degree at this University.
-    \item[\tiny{$\blacksquare$}] Where any part of this thesis has previously
+  \item[\tiny{$\blacksquare$}] Where any part of this thesis has previously
         been submitted for a degree or any other qualification at this
         University or any other institution, this has been clearly stated.
-    \item[\tiny{$\blacksquare$}] Where I have consulted the published work of
+  \item[\tiny{$\blacksquare$}] Where I have consulted the published work of
         others, this is always clearly attributed.
-    \item[\tiny{$\blacksquare$}] Where I have quoted from the work of others,
+  \item[\tiny{$\blacksquare$}] Where I have quoted from the work of others,
         the source is always given. With the exception of such quotations, this
         thesis is entirely my own work.
-    \item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
-    \item[\tiny{$\blacksquare$}] Where the thesis is based on work done by
+  \item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+  \item[\tiny{$\blacksquare$}] Where the thesis is based on work done by
         myself jointly with others, I have made clear exactly what was done by
         others and what I have contributed myself.\\
 \end{itemize}
@@ -126,10 +126,10 @@ Signed:\\
 
 Date:\\
 \rule[1em]{25em}{0.5pt} % This prints a line to write the date
-    }
+}
 
-    \vfil\vfil\null
-    \clearpage % Start a new page
+\vfil\vfil\null
+\clearpage % Start a new page
 }
 %-------------------------------------------------------------------------------
 
@@ -139,43 +139,43 @@ Date:\\
 % Use the \Certificate command to print the Certificate in the document
 %-------------------------------------------------------------------------------
 \newcommand\Certificate{
-    \btypeout{Certificate}
-    \addtotoc{Certificate}
-    \addtocontents{toc}{\vspace{1em}}
-    \thispagestyle{plain}
-    \null\vfil
-    \begin{center}{\huge\bf Certificate\par}\end{center}
-    {\normalsize
+\btypeout{Certificate}
+\addtotoc{Certificate}
+\addtocontents{toc}{\vspace{1em}}
+\thispagestyle{plain}
+\null\vfil
+\begin{center}{\huge\bf Certificate\par}\end{center}
+{\normalsize
 This is to certify that the thesis entitled, ``\emph{\ttitle}'' and submitted by
 \underline{\authornames} ID No. \underline{\idnum} in partial fulfillment of the
 requirements of \ccode{} \cname{} embodies the work done by him under my
 supervision.\\[2.5cm]
 \begin{minipage}{0.5\textwidth}
-    \begin{flushleft} \large
-        \vspace{2cm}
-        \rule[0.5em]{13em}{0.5pt}\\
-        \emph{Supervisor}\\
-        \supname\\
-        \suppos,\\
-        \supinst\\
-        Date:\\
-    \end{flushleft}
+  \begin{flushleft} \large
+    \vspace{2cm}
+    \rule[0.5em]{13em}{0.5pt}\\
+    \emph{Supervisor}\\
+    \supname\\
+    \suppos,\\
+    \supinst\\
+    Date:\\
+  \end{flushleft}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-    \begin{flushleft} \large
-        \vspace{2cm}
-        \rule[0.5em]{13em}{0.5pt}\\
-        \emph{Co-Supervisor} \\
-        \cosupname\\
-        \cosuppos,\\
-        \cosupinst\\
-        Date:\\
-    \end{flushleft}
+  \begin{flushleft} \large
+    \vspace{2cm}
+    \rule[0.5em]{13em}{0.5pt}\\
+    \emph{Co-Supervisor} \\
+    \cosupname\\
+    \cosuppos,\\
+    \cosupinst\\
+    Date:\\
+  \end{flushleft}
 \end{minipage}\\[3cm]
-    }
+}
 
-    \vfil\vfil\null
-    \clearpage
+\vfil\vfil\null
+\clearpage
 }
 %-------------------------------------------------------------------------------
 
@@ -186,21 +186,21 @@ supervision.\\[2.5cm]
 % quotation in the document.
 %-------------------------------------------------------------------------------
 \newcommand\Quotation[2]{
-    \btypeout{Quotation}
-    \pagestyle{empty} % No headers or footers for the following pages
+  \btypeout{Quotation}
+  \pagestyle{empty} % No headers or footers for the following pages
 
-    \null\vfill % Add some space to move the quote down the page a bit
+  \null\vfill % Add some space to move the quote down the page a bit
 
-    \textit{``#1''}
+  \textit{``#1''}
 
-    \begin{flushright}
-        #2
-    \end{flushright}
+  \begin{flushright}
+    #2
+  \end{flushright}
 
-    % Add some space at the bottom to position the quote just right
-    \vfill\vfill\vfill\vfill\vfill\vfill\null
+  % Add some space at the bottom to position the quote just right
+  \vfill\vfill\vfill\vfill\vfill\vfill\null
 
-    \clearpage % Start a new page
+  \clearpage % Start a new page
 }
 %-------------------------------------------------------------------------------
 
@@ -210,75 +210,69 @@ supervision.\\[2.5cm]
 % Use the \AbstractSheet command 
 %-------------------------------------------------------------------------------
 \newcommand\AbstractSheet{
-  \setstretch{1}
-    \btypeout{Abstract Sheet}
-    \addtotoc{Abstract Sheet}
-    \addtocontents{toc}{\vspace{0.25em}} % Add gap in the Contents, for aesthetics
-    \thispagestyle{plain}
-    % \null\vfil
-    \begin{center}
-      {\Large\bf Abstract Sheet 
-      \\
-      BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE,
-      \\
-      PILANI - (RAJASTHAN)
-      \\
-      \vspace{20pt}
-      Practice School Division}
-    \end{center}
-    {\normalsize
-    %
-    %
-    \begin{minipage}{.55\textwidth}
-      \textbf{Station:} \pstation\\
-      \textbf{Duration:} 30\textsuperscript{th} May - 22\textsuperscript{nd} July 2023
-    \end{minipage}%
-    \begin{minipage}{0.45\textwidth}
-      \textbf{Centre:} \pcentre\\
-      \textbf{Date of Submission:} 24\textsuperscript{th} June 2023
-    \end{minipage}
-    %
-    %
+\setstretch{1}
+\btypeout{Abstract Sheet}
+\addtotoc{Abstract Sheet}
+\addtocontents{toc}{\vspace{0.25em}} % Add gap in the Contents, for aesthetics
+\thispagestyle{plain}
+% \null\vfil
+\begin{center}
+  {\Large\bf Abstract Sheet
     \\
-    \\[0.25cm]
-    \textbf{Title:} \ttitle\\
+    BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE,
     \\
-    \textbf{Name of student:} \name \\
-    \textbf{ID Number:} \idnum 
-    %
-    \renewcommand{\arraystretch}{1.2}
-    
-    \begin{table}[h!]
-      \hspace{-10pt}
-      \begin{tabular}{ll}
-      \textbf{Name of Experts}    & \textbf{Designation} \\ 
-      \mgr                           & \mgrdesig                    \\
-      \mentor                           & \mentordesig                    \\[0.3cm] 
-      \textbf{Name of PS Faculty} & \textbf{Designation} \\ 
-      \psfacultyone                           & \psfacultyonedesig                    \\
-      % \psfacultytwo                           & \psfacultytwodesig                   
-      \end{tabular}
-      \end{table}
-    
-    \textbf{Keywords:} \keywordnames\\
+    PILANI - (RAJASTHAN)
     \\
-    \textbf{Project Areas:} \areanames \\
+    \vspace{20pt}
+    Practice School Division}
+\end{center}
+{\normalsize
+%
+%
+\begin{minipage}{.55\textwidth}
+  \textbf{Station:} \pstation\\
+  \textbf{Duration:} 30\textsuperscript{th} May - 22\textsuperscript{nd} July 2023
+\end{minipage}%
+\begin{minipage}{0.45\textwidth}
+  \textbf{Centre:} \pcentre\\
+  \textbf{Date of Submission:} 24\textsuperscript{th} June 2023
+\end{minipage}
+%
+%
+\\
+\\[0.25cm]
+\textbf{Title:} \ttitle\\
+\\
+\textbf{Name of student:} \name \\
+\textbf{ID Number:} \idnum
+%
+\renewcommand{\arraystretch}{1.2}
 
-  \vspace{-10pt}
-	
-		\begin{center}
-      \textbf{Abstract}
-    \end{center}
-    \vspace{-5pt}
-    \abstract
-	
-	\vfill	
-	\textbf{Signature of Student} \hfill \textbf{Signature of PS Faculty} 
-    }
+\begin{table}[h!]
+  \hspace{-10pt}
+  \begin{tabular}{ll}
+    \textbf{Name of Experts}    & \textbf{Designation} \\
+    \mgr                        & \mgrdesig            \\
+    \mentor                     & \mentordesig         \\[0.3cm]
+    \textbf{Name of PS Faculty} & \textbf{Designation} \\
+    \psfacultyone               & \psfacultyonedesig   \\
+    % \psfacultytwo                           & \psfacultytwodesig                   
+  \end{tabular}
+\end{table}
 
-    \vfil\vfil\null
-    \clearpage
-    \setstretch{1.3}
+\textbf{Keywords:} \keywordnames\\
+\\
+\textbf{Project Areas:} \areanames \\
+
+\vspace{-10pt}
+
+\vfill
+\textbf{Signature of Student} \hfill \textbf{Signature of PS Faculty}
+}
+
+\vfil\vfil\null
+\clearpage
+\setstretch{1.3}
 %     
 }
 %-------------------------------------------------------------------------------
@@ -293,40 +287,40 @@ supervision.\\[2.5cm]
   \thispagestyle{plain}
   \nonumber
   \begin{titlepage}
-  \begin{center}
-    \vspace{2cm}
-    {\Large A REPORT \\[0.25cm] ON}\\
-    \vspace{1cm}
+    \begin{center}
+      \vspace{2cm}
+      {\Large A REPORT \\[0.25cm] ON}\\
+      \vspace{1cm}
 
-    \begin{minipage}{.7\textwidth}
-      \centering
-      \setstretch{2}
-      {\LARGE \bfseries \ttitle}\\[1cm] % Thesis title
-      \setstretch{1.3}
-    \end{minipage}
-    
-    \vspace{0.5cm}
-    {\Large BY}\\[0.5cm] % Thesis type
-    \Large {\bf \MakeUppercase{\name} \hspace{4cm} \idnum }\\[2cm] % University requirement text
+      \begin{minipage}{.7\textwidth}
+        \centering
+        \setstretch{2}
+        {\LARGE \bfseries \ttitle}\\[1cm] % Thesis title
+        \setstretch{1.3}
+      \end{minipage}
+
+      \vspace{0.5cm}
+      {\Large BY}\\[0.5cm] % Thesis type
+      \Large {\bf \MakeUppercase{\name} \hspace{4cm} \idnum }\\[2cm] % University requirement text
     \end{center}
 
     \begin{center}
       {\Large \bf Prepared in partial fulfilment of \\ the Practice School-I Course \ccode}\\[0.5cm]
-      
+
       {\Large AT}\\[0.5cm] % Thesis type
-      
+
       \Large {\bf \pstation}\\[0.5cm]
       \Large {\bf A Practice School – I Station of}\\[1cm]
-      
-    \includegraphics{Figures/bits-logo.pdf} % University/department logo
-   \\[1cm]
-   {\bf BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI,
-   GOA CAMPUS}\\
-    {\Large \today}\\[4cm] % Date
-    \vfill
-    \nonumber
-\end{center}
-\end{titlepage}
+
+      \includegraphics{Figures/bits-logo.pdf} % University/department logo
+      \\[1cm]
+      {\bf BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI,
+      GOA CAMPUS}\\
+      {\Large \today}\\[4cm] % Date
+      \vfill
+      \nonumber
+    \end{center}
+  \end{titlepage}
 }
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
@@ -348,10 +342,10 @@ supervision.\\[2.5cm]
 \renewcommand{\sectionmark}[1]{}
 \renewcommand{\subsectionmark}[1]{}
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-\hbox{}
-\thispagestyle{empty}
-\newpage
-\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+      \hbox{}
+      \thispagestyle{empty}
+      \newpage
+      \if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace,mathtools}
 \theoremstyle{plain}
 \newtheorem{example}{Example}[chapter]
@@ -391,42 +385,42 @@ supervision.\\[2.5cm]
 \usepackage{lstpatch}
 \usepackage{microtype}
 \lstset{captionpos=b,
-        frame=tb,
-        basicstyle=\scriptsize\ttfamily,
-        showstringspaces=false,
-        keepspaces=true}
+  frame=tb,
+  basicstyle=\scriptsize\ttfamily,
+  showstringspaces=false,
+  keepspaces=true}
 \lstdefinestyle{matlab} {
-        language=Matlab,
-        keywordstyle=\color{blue},
-        commentstyle=\color[rgb]{0.13,0.55,0.13}\em,
-        stringstyle=\color[rgb]{0.7,0,0} }
+  language=Matlab,
+  keywordstyle=\color{blue},
+  commentstyle=\color[rgb]{0.13,0.55,0.13}\em,
+  stringstyle=\color[rgb]{0.7,0,0} }
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
-   bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
-   colorlinks,linkcolor={blue},citecolor={black},urlcolor={black},
-   pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+  bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,
+  colorlinks,linkcolor={blue},citecolor={black},urlcolor={black},
+  pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
 
 \usepackage{xcolor}
 \definecolor{vgreen}{RGB}{104,180,104}
 \definecolor{vblue}{RGB}{49,49,255}
 \definecolor{vorange}{RGB}{255,143,102}
-   
-\lstdefinestyle{verilog-style}
-   {
-       language=Verilog,
-       basicstyle=\small\ttfamily,
-       keywordstyle=\color{vblue},
-       identifierstyle=\color{black},
-       commentstyle=\color{vgreen},
-      %  numbers=left,
-      %  numberstyle=\tiny\color{black},
-      %  numbersep=10pt,
-       tabsize=8,
-       moredelim=*[s][\colorIndex]{[}{]},
-       literate=*{:}{:}1,
-       frame=none
-   }
 
-   
+\lstdefinestyle{verilog-style}
+{
+language=Verilog,
+basicstyle=\small\ttfamily,
+keywordstyle=\color{vblue},
+identifierstyle=\color{black},
+commentstyle=\color{vgreen},
+%  numbers=left,
+%  numberstyle=\tiny\color{black},
+%  numbersep=10pt,
+tabsize=8,
+moredelim=*[s][\colorIndex]{[}{]},
+literate=*{:}{:}1,
+frame=none
+}
+
+
 
 \usepackage{trace}
 
@@ -436,7 +430,7 @@ supervision.\\[2.5cm]
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \pdfstringdefDisableCommands{
-   \let\\\space
+  \let\\\space
 }
 
 \newcommand*{\projecttitle}[1]{\def\ttitle{#1}}
@@ -466,63 +460,63 @@ supervision.\\[2.5cm]
 % Redefine the \maketitle command to create a custom title page
 % ------------------------------------------------------------------------------
 \renewcommand\maketitle{
-    \btypeout{Title Page}
-    % \newgeometry{paper=a4paper,top=0.6in,bottom=0.8in,right=1in,left=1in}
-    % PDF meta-data
-    \hypersetup{pdftitle={\ttitle}}
-    % \hypersetup{pdfsubject=\subjectname}
-    % \hypersetup{pdfauthor=\authornames}
-    % \hypersetup{pdfkeywords=\keywordnames}
-    % \hypersetup{pdfkeywords=\IDNumber}
+  \btypeout{Title Page}
+  % \newgeometry{paper=a4paper,top=0.6in,bottom=0.8in,right=1in,left=1in}
+  % PDF meta-data
+  \hypersetup{pdftitle={\ttitle}}
+  % \hypersetup{pdfsubject=\subjectname}
+  % \hypersetup{pdfauthor=\authornames}
+  % \hypersetup{pdfkeywords=\keywordnames}
+  % \hypersetup{pdfkeywords=\IDNumber}
 
-    \begin{titlepage}
-        \begin{center}
+  \begin{titlepage}
+    \begin{center}
 
-        %\textsc{\LARGE \univname}\\[1.5cm] % University name
-        %\textsc{\Large \doctype}\\[0.5cm] % Thesis type
-        \vspace{2cm}
-        {\Large A REPORT \\[0.25cm] ON}\\
-        \vspace{1cm}
-        
-        \begin{minipage}{.7\textwidth}
-          \centering
-          \setstretch{2}
-          {\LARGE \bfseries \ttitle}\\[1cm] % Thesis title
-          \setstretch{1.3}
-        \end{minipage}
-        
-        \vspace{0.5cm}
-		{\Large BY}\\[0.5cm] % Thesis type
-		\Large {\bf \MakeUppercase{\name} \hspace{4cm} \idnum }\\[3cm] % University requirement text
+      %\textsc{\LARGE \univname}\\[1.5cm] % University name
+      %\textsc{\Large \doctype}\\[0.5cm] % Thesis type
+      \vspace{2cm}
+      {\Large A REPORT \\[0.25cm] ON}\\
+      \vspace{1cm}
+
+      \begin{minipage}{.7\textwidth}
+        \centering
+        \setstretch{2}
+        {\LARGE \bfseries \ttitle}\\[1cm] % Thesis title
+        \setstretch{1.3}
+      \end{minipage}
+
+      \vspace{0.5cm}
+      {\Large BY}\\[0.5cm] % Thesis type
+      \Large {\bf \MakeUppercase{\name} \hspace{4cm} \idnum }\\[3cm] % University requirement text
     \end{center}
 
-        % \large \textit{Submitted in partial fulfillment of the
-        % requirements of\\\ccode{} \cname}\\[1cm] % University requirement text
+    % \large \textit{Submitted in partial fulfillment of the
+    % requirements of\\\ccode{} \cname}\\[1cm] % University requirement text
 
-        % \begin{center}
-        %     \emph{By}\\[0.3cm]
-        %     \authornames\\
-        %     ID No. \idnum\\
-        %     \vspace{1cm}
-        %     \emph{Under the supervision of:} \\[0.3cm]
-        %     \supname \\ % The supervisor's name
-        %     \& \\
-        %     \cosupname\\[1cm] % The co-supervisor's name
-        % \end{center}
-        \begin{center}
-          {\Large AT}\\[0.5cm] % Thesis type
-          
-		      \Large {\bf \pstation}\\[0.5cm]
-		      \Large {\bf A Practice School – I Station of}\\[1cm]
-          
-        \includegraphics{Figures/bits-logo.pdf} % University/department logo
-       \\[1cm]
-       {\bf BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI,
-       GOA CAMPUS}\\
-        {\Large \today}\\[4cm] % Date
-        \vfill
+    % \begin{center}
+    %     \emph{By}\\[0.3cm]
+    %     \authornames\\
+    %     ID No. \idnum\\
+    %     \vspace{1cm}
+    %     \emph{Under the supervision of:} \\[0.3cm]
+    %     \supname \\ % The supervisor's name
+    %     \& \\
+    %     \cosupname\\[1cm] % The co-supervisor's name
+    % \end{center}
+    \begin{center}
+      {\Large AT}\\[0.5cm] % Thesis type
+
+      \Large {\bf \pstation}\\[0.5cm]
+      \Large {\bf A Practice School – I Station of}\\[1cm]
+
+      \includegraphics{Figures/bits-logo.pdf} % University/department logo
+      \\[1cm]
+      {\bf BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI,
+      GOA CAMPUS}\\
+      {\Large \today}\\[4cm] % Date
+      \vfill
     \end{center}
-\end{titlepage}
+  \end{titlepage}
 }
 % ------------------------------------------------------------------------------
 
@@ -558,17 +552,17 @@ supervision.\\[2.5cm]
 %-------------------------------------------------------------------------------
 \newenvironment{acknowledgements}
 {
-    \btypeout{Acknowledgements}
-    \addtotoc{Acknowledgements}
-    \addtocontents{toc}{\vspace{0.25em}}
-    \setstretch{1.3}
-    \thispagestyle{plain}
-    \begin{center}{\huge{\textit{Acknowledgements}} \par}\end{center}
-    \normalsize
+  \btypeout{Acknowledgements}
+  \addtotoc{Acknowledgements}
+  \addtocontents{toc}{\vspace{0.25em}}
+  \setstretch{1.3}
+  \thispagestyle{plain}
+  \begin{center}{\huge{\textit{Acknowledgements}} \par}\end{center}
+  \normalsize
 }
 {
-    \vfil\vfil\null
-    \clearpage
+  \vfil\vfil\null
+  \clearpage
 }
 %-------------------------------------------------------------------------------
 
@@ -576,13 +570,13 @@ supervision.\\[2.5cm]
 % DEDICATORY
 %-------------------------------------------------------------------------------
 \newcommand\Dedicatory[1]{
-\btypeout{Dedicatory}
-\thispagestyle{plain}
-\null\vfil
-\vskip 60\p@
-\begin{center}{\Large \sl #1}\end{center}
-\vfil\null
-\cleardoublepage
+  \btypeout{Dedicatory}
+  \thispagestyle{plain}
+  \null\vfil
+  \vskip 60\p@
+  \begin{center}{\Large \sl #1}\end{center}
+  \vfil\null
+  \cleardoublepage
 }
 %-------------------------------------------------------------------------------
 
@@ -590,88 +584,88 @@ supervision.\\[2.5cm]
 \setcounter{tocdepth}{3}
 \newcounter{dummy}
 \newcommand\addtotoc[1]{
-\refstepcounter{dummy}
-\addcontentsline{toc}{chapter}{#1}}
+  \refstepcounter{dummy}
+  \addcontentsline{toc}{chapter}{#1}}
 \renewcommand\tableofcontents{
-\btypeout{Table of Contents}
-\addtotoc{Contents}
-\begin{spacing}{1}{
-    \setlength{\parskip}{1pt}
-    \if@twocolumn
-      \@restonecoltrue\onecolumn
-    \else
-      \@restonecolfalse
-    \fi
-    \chapter*{\contentsname
+  \btypeout{Table of Contents}
+  \addtotoc{Contents}
+  \begin{spacing}{1}{
+      \setlength{\parskip}{1pt}
+      \if@twocolumn
+        \@restonecoltrue\onecolumn
+      \else
+        \@restonecolfalse
+      \fi
+      \chapter*{\contentsname
         \@mkboth{
-           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}
-    \@starttoc{toc}
-    \if@restonecol\twocolumn\fi
-   \cleardoublepage
-}\end{spacing}
+          \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}
+      \@starttoc{toc}
+      \if@restonecol\twocolumn\fi
+      \cleardoublepage
+    }\end{spacing}
 }
 \renewcommand\listoffigures{
-\btypeout{List of Figures}
-\addtotoc{List of Figures}
-\begin{spacing}{1}{
-    \setlength{\parskip}{1pt}
-    \if@twocolumn
-      \@restonecoltrue\onecolumn
-    \else
-      \@restonecolfalse
-    \fi
-    \chapter*{\listfigurename
-      \@mkboth{\MakeUppercase\listfigurename}
-              {\MakeUppercase\listfigurename}}
-    \@starttoc{lof}
-    \if@restonecol\twocolumn\fi
-    \cleardoublepage
-}\end{spacing}
+  \btypeout{List of Figures}
+  \addtotoc{List of Figures}
+  \begin{spacing}{1}{
+      \setlength{\parskip}{1pt}
+      \if@twocolumn
+        \@restonecoltrue\onecolumn
+      \else
+        \@restonecolfalse
+      \fi
+      \chapter*{\listfigurename
+        \@mkboth{\MakeUppercase\listfigurename}
+        {\MakeUppercase\listfigurename}}
+      \@starttoc{lof}
+      \if@restonecol\twocolumn\fi
+      \cleardoublepage
+    }\end{spacing}
 }
 \renewcommand\listoftables{
-\btypeout{List of Tables}
-\addtotoc{List of Tables}
-\begin{spacing}{1}{
-    \setlength{\parskip}{1pt}
-    \if@twocolumn
-      \@restonecoltrue\onecolumn
-    \else
-      \@restonecolfalse
-    \fi
-    \chapter*{\listtablename
-      \@mkboth{
+  \btypeout{List of Tables}
+  \addtotoc{List of Tables}
+  \begin{spacing}{1}{
+      \setlength{\parskip}{1pt}
+      \if@twocolumn
+        \@restonecoltrue\onecolumn
+      \else
+        \@restonecolfalse
+      \fi
+      \chapter*{\listtablename
+        \@mkboth{
           \MakeUppercase\listtablename}{\MakeUppercase\listtablename}}
-    \@starttoc{lot}
-    \if@restonecol\twocolumn\fi
-    \cleardoublepage
-}\end{spacing}
+      \@starttoc{lot}
+      \if@restonecol\twocolumn\fi
+      \cleardoublepage
+    }\end{spacing}
 }
 \newcommand\listsymbolname{Abbreviations}
 \usepackage{longtable}
 \newcommand\listofsymbols[2]{
-\btypeout{\listsymbolname}
-\addtotoc{\listsymbolname}
-    \chapter*{\listsymbolname
-      \@mkboth{
-          \MakeUppercase\listsymbolname}{\MakeUppercase\listsymbolname}}
-\begin{longtable}[c]{#1}#2\end{longtable}\par
-    \cleardoublepage
+  \btypeout{\listsymbolname}
+  \addtotoc{\listsymbolname}
+  \chapter*{\listsymbolname
+    \@mkboth{
+      \MakeUppercase\listsymbolname}{\MakeUppercase\listsymbolname}}
+  \begin{longtable}[c]{#1}#2\end{longtable}\par
+  \cleardoublepage
 }
 \newcommand\listconstants{Physical Constants}
 \usepackage{longtable}
 \newcommand\listofconstants[2]{
-\btypeout{\listconstants}
-\addtotoc{\listconstants}
-    \chapter*{\listconstants
-      \@mkboth{
-          \MakeUppercase\listconstants}{\MakeUppercase\listconstants}}
-\begin{longtable}[c]{#1}#2\end{longtable}\par
-    \cleardoublepage
+  \btypeout{\listconstants}
+  \addtotoc{\listconstants}
+  \chapter*{\listconstants
+    \@mkboth{
+      \MakeUppercase\listconstants}{\MakeUppercase\listconstants}}
+  \begin{longtable}[c]{#1}#2\end{longtable}\par
+  \cleardoublepage
 }
 \newcommand\listnomenclature{Nomenclature}
 \newcommand\listofnomenclature[0]{
-\printglossaries
-    \cleardoublepage
+  \printglossaries
+  \cleardoublepage
 }
 \renewcommand\backmatter{
   \if@openright
